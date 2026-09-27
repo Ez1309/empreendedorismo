@@ -27,22 +27,26 @@ A dificuldade de encontrar profissionais confiáveis para serviços rápidos (el
 
 ## 3. Problema Escolhido
 
-**Moradia Estudantil** 
+**Moradia Estudantil**
 
-**Descrição objetiva:** O processo de procura e oferta de alojamento estudantil (repúblicas, kitnets e quartos) em Lavras é desorganizado e descentralizado. Atualmente, a busca baseia-se em publicações dispersas em grupos de Facebook, listas de transmissão no WhatsApp e anúncios informais, sem qualquer padronização. Faltam informações cruciais para a tomada de decisão, como o custo real total (incluindo despesas variáveis), regras de convivência da casa, fotografias confiáveis e a localização exata em relação ao campus.
+* **Descrição objetiva:** O processo de procura e oferta de alojamento estudantil (repúblicas, kitnets e quartos) em Lavras é desorganizado e descentralizado. Atualmente, a busca baseia-se em publicações dispersas em grupos de Facebook, listas de transmissão no WhatsApp e anúncios informais, sem qualquer padronização. Faltam informações cruciais para a tomada de decisão, como o custo real total (incluindo despesas variáveis), regras de convivência da casa, fotografias confiáveis e a localização exata em relação ao campus.
+* **Contexto em que ocorre:** Este problema manifesta-se, sobretudo, quando os estudantes ingressam na universidade e necessitam migrar para Lavras. Grande parte desses jovens desconhece a geografia da cidade, a dinâmica dos bairros ao redor da UFLA e o mercado imobiliário local. Ocorre também de forma contínua ao longo do curso, motivado por incompatibilidades de convivência ou formaturas, que geram vagas ociosas com necessidade de preenchimento urgente.
 
-**Contexto em que ocorre:** Este problema manifesta-se, sobretudo, quando os estudantes ingressam na universidade e necessitam migrar para Lavras. Grande parte desses jovens desconhece a geografia da cidade, a dinâmica dos bairros ao redor da UFLA e o mercado imobiliário local. Ocorre também de forma contínua ao longo do curso, motivado por incompatibilidades de convivência ou formaturas, que geram vagas ociosas com necessidade de preenchimento urgente.
+### Cenário Atual e Ferramentas Utilizadas
+Atualmente, a busca por moradia estudantil, repúblicas e colegas de quarto na região ocorre de maneira fragmentada, baseando-se principalmente em métodos informais e plataformas genéricas. As principais ferramentas utilizadas pelos estudantes são:
 
-**Frequência ou recorrência esperada:** O problema apresenta picos de alta intensidade duas vezes ao ano, alinhados ao calendário acadêmico da UFLA e às matrículas de novos alunos. Contudo, há uma recorrência contínua, impulsionada pela rotatividade natural dos estudantes.
+* **Grupos de Facebook:** Tradicionalmente o principal canal, onde moradores e proprietários publicam vagas em repúblicas, kitnets e apartamentos. Apesar do grande volume de anúncios, os dados são desestruturados. Não há como aplicar filtros refinados de busca, tornando o processo exaustivo e pouco prático para quem precisa de respostas rápidas.
+* **Grupos de WhatsApp:** Oferecem uma comunicação mais ágil e direta, porém são descentralizados e fechados. Dependem de networking prévio e links de convite, o que cria uma barreira de entrada enorme para calouros que acabaram de chegar à cidade e ainda não têm contatos.
+* **Plataformas Locais e Guias do Estudante:** Existem sites específicos da região que tentam centralizar a recepção aos estudantes. Essas plataformas costumam oferecer os anúncios de vagas junto a um guia prático (incluindo horários do transporte público, itinerário do Mamute e funcionamento do RU). Embora sejam excelentes repositórios de utilidade pública, o foco dessas ferramentas geralmente está no imóvel ou na república em si, e não na experiência do usuário que busca a vaga.
 
-**Consequências:**
-- **Para quem procura:** Gera elevado nível de estresse emocional e ansiedade devido à pressão para encontrar moradia. Há o risco iminente de perdas financeiras (golpes envolvendo falsas cauções) e de comprometimento do rendimento acadêmico inicial devido à instabilidade habitacional.
-- **Para quem oferta:** O atraso no preenchimento das vagas nas moradias compartilhadas resulta em sobrecarga financeira imediata para os residentes atuais, que são obrigados a ratear o aluguel e as despesas da vaga ociosa.
-
-**Pessoas ou organizações afetadas:**
-- **Estudantes recém-chegados (e veteranos em transição):** Necessitam de habitação segura, acessível e compatível com o seu perfil.   
-- **Familiares/Pais:** Frequentemente os financiadores da moradia, que partilham a angústia em relação à segurança e ao bem-estar dos filhos.   
-- **Representantes de repúblicas e proprietários privados:** Perdem tempo e dinheiro em canais de divulgação ineficientes, precisando encontrar moradores de forma rápida para manter a sustentabilidade financeira do imóvel.
+* **Frequência ou recorrência esperada:** O problema apresenta picos de alta intensidade duas vezes ao ano, alinhados ao calendário acadêmico da UFLA e às matrículas de novos alunos. Contudo, há uma recorrência contínua, impulsionada pela rotatividade natural dos estudantes.
+* **Consequências:**
+  * **Para quem procura:** Gera elevado nível de estresse emocional e ansiedade devido à pressão para encontrar moradia. Há o risco iminente de perdas financeiras (golpes envolvendo falsas cauções) e de comprometimento do rendimento acadêmico inicial devido à instabilidade habitacional.
+  * **Para quem oferta:** O atraso no preenchimento das vagas nas moradias compartilhadas resulta em sobrecarga financeira imediata para os residentes atuais, que são obrigados a ratear o aluguel e as despesas da vaga ociosa.
+* **Pessoas ou organizações afetadas:**
+  * **Estudantes recém-chegados (e veteranos em transição):** Necessitam de habitação segura, acessível e compatível com o seu perfil.
+  * **Familiares/Pais:** Frequentemente os financiadores da moradia, que partilham a angústia em relação à segurança e ao bem-estar dos filhos.
+  * **Representantes de repúblicas e proprietários privados:** Perdem tempo e dinheiro em canais de divulgação ineficientes, precisando encontrar moradores de forma rápida para manter a sustentabilidade financeira do imóvel.
 
 ## 4. Público-alvo Preliminar
 
