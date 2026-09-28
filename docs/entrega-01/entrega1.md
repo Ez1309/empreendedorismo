@@ -85,9 +85,20 @@ Atualmente, a busca por moradia estudantil e colegas de quarto na região ocorre
 * **Concorrentes Indiretos (Plataformas de Imobiliárias):** Sites de imobiliárias tradicionais da cidade. Resolve o problema de quem busca um imóvel inteiro, mas esbarra na alta burocracia (exigência de fiadores, seguros caros) e falha completamente no nicho do compartilhamento, pois não intermedeia a divisão de quartos ou o "match" entre estudantes.
 * **Concorrente Direto (Morapp):** Uma plataforma local recente, nascida de um projeto acadêmico, com o objetivo de conectar universitários a moradias. Embora possua uma proposta de valor semelhante (oferecendo filtros de busca e verificação de segurança), a plataforma apresenta falhas de tração e escalabilidade, contando atualmente com apenas cerca de 9 repúblicas cadastradas. Além disso, o foco é unilateral (apenas o imóvel é anunciado), não explorando dinâmicas essenciais do mercado estudantil, como o anúncio reverso (o próprio estudante publicando seu perfil em busca de um quarto) ou o repasse de contratos.
 
+## 7. Hipóteses Iniciais
+
+Para guiar o desenvolvimento do projeto e a validação de mercado, formulamos as seguintes hipóteses centrais, focadas estritamente na dinâmica de moradia compartilhada entre os próprios estudantes:
+
+* **Hipótese de problema:** Estudantes (especialmente calouros) enfrentam alta ansiedade e dificuldade para encontrar moradia compatível com seu perfil devido à falta de informações centralizadas e padronizadas.
+
+* **Hipótese de necessidade:** Há uma necessidade urgente de transparência nos custos reais, regras de convivência e perfil dos moradores na hora de fechar um aluguel ou vaga em república.
+
+* **Hipótese de cliente:** Representantes de repúblicas e proprietários privados perdem dinheiro com vagas ociosas e estariam dispostos a pagar pequenas taxas para anunciar de forma destacada em uma plataforma focada no nicho estudantil.
+
+* **Hipótese preliminar de valor:** Uma plataforma que conecte as partes com filtros precisos (distância do campus da UFLA, preço total, regras e compatibilidade de perfil) reduzirá o tempo de ociosidade das vagas e o estresse da busca por moradia
 
 
----
+
 
 ## Referências
 
