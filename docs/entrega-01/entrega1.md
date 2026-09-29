@@ -89,15 +89,52 @@ Atualmente, a busca por moradia estudantil e colegas de quarto na região ocorre
 
 Para guiar o desenvolvimento do projeto e a validação de mercado, formulamos as seguintes hipóteses centrais, focadas estritamente na dinâmica de moradia compartilhada entre os próprios estudantes:
 
-* **Hipótese de problema:** Estudantes (especialmente calouros) enfrentam alta ansiedade e dificuldade para encontrar moradia compatível com seu perfil devido à falta de informações centralizadas e padronizadas.
+* **Hipótese de problema:** Estudantes migrantes (especialmente calouros) enfrentam grandes dificuldades, perda de tempo e frustrações ao buscar moradia em Lavras, devido à fragmentação das informações e à falta de padronização nos canais de comunicação atuais.
+* **Hipótese de necessidade:** Há uma necessidade latente e não atendida por transparência nos custos reais, clareza nas regras de convivência e avaliação de compatibilidade de perfil (fit cultural) no momento de fechar uma vaga em moradia compartilhada.
+* **Hipótese de cliente:** Estudantes residentes em moradias compartilhadas (repúblicas ou apartamentos divididos) sofrem impacto financeiro imediato com a vacância de quartos — devido ao rateio do aluguel e contas — e estariam dispostos a pagar uma pequena taxa para destacar seus anúncios em uma plataforma centralizada e focada no nicho estudantil.
+* **Hipótese preliminar de valor:** Uma solução digital que centralize a oferta e a demanda, permitindo o cruzamento exato de perfis (distância do campus, orçamento e regras da casa), agregará valor ao reduzir o tempo de ociosidade das vagas e as frustrações da busca por moradia.
 
-* **Hipótese de necessidade:** Há uma necessidade urgente de transparência nos custos reais, regras de convivência e perfil dos moradores na hora de fechar um aluguel ou vaga em república.
+## 8. Plano para a Entrega 2
 
-* **Hipótese de cliente:** Representantes de repúblicas e proprietários privados perdem dinheiro com vagas ociosas e estariam dispostos a pagar pequenas taxas para anunciar de forma destacada em uma plataforma focada no nicho estudantil.
+Para validar as hipóteses levantadas e compreender a real dimensão do problema habitacional, adotaremos uma abordagem mista (quantitativa e qualitativa).
 
-* **Hipótese preliminar de valor:** Uma plataforma que conecte as partes com filtros precisos (distância do campus da UFLA, preço total, regras e compatibilidade de perfil) reduzirá o tempo de ociosidade das vagas e o estresse da busca por moradia
+**Quem será entrevistado:**
+- **Perfil A (Quem procura):** Estudantes (calouros ou veteranos) que passaram pelo processo de busca por um quarto ou colegas para dividir aluguel em Lavras.
+- **Perfil B (Quem oferta/repassa):** Qualquer estudante que divide moradia e já precisou buscar um novo colega de quarto (para cobrir alguém que saiu), ou que precisou repassar o próprio contrato/vaga (por trancamento de curso, intercâmbio ou mudança).
 
+**Como essas pessoas serão encontradas:**
+- **Abordagem Presencial (Qualitativa):** Entrevistas semiestruturadas presenciais no centro de convivência da UFLA.
+- **Abordagem Digital (Quantitativa):** Disparo de um questionário curto via Google Forms em grupos de WhatsApp de turmas e cursos da UFLA.
 
+**Quantidade pretendida:**
+- Nossa meta é alcançar entre **10 e 20 interações válidas** no total. Destas, garantiremos pelo menos **5 entrevistas semiestruturadas presenciais**.
+
+**Termo de Ética e Privacidade:**
+Em total conformidade com as regras de ética do trabalho, todas as interações (presenciais ou via Forms) iniciarão com um breve termo de consentimento. Informaremos a finalidade estritamente acadêmica do projeto e garantiremos o anonimato nas respostas referentes ao problema habitacional.
+
+**Perguntas iniciais (Roteiro Base):**
+O roteiro focará no comportamento passado do entrevistado, sem apresentar soluções ou aplicativos precocemente, evitando enviesar as respostas.
+
+*Filtro inicial: Você buscou moradia recentemente ou já precisou anunciar um quarto vago/repassar contrato onde mora?*
+
+*Para o Perfil A (Quem procura):*
+1. Como foi a sua última experiência buscando um quarto ou apartamento para dividir aqui em Lavras? 
+2. Quais ferramentas você usou (WhatsApp, Facebook, boca a boca) e o que achou mais frustrante ou difícil nesse processo?
+3. Você sentiu falta de clareza em relação a "contas invisíveis" (água, luz, internet, condomínio) ou às regras da casa antes de se mudar?
+4. Quais critérios são inegociáveis para você no perfil das pessoas com quem vai dividir a casa?
+
+*Para o Perfil B (Quem oferta/repassa vaga):*
+1. Você já precisou encontrar alguém para repassar seu contrato ou para substituir um colega de quarto que saiu da casa? Como foi esse processo?
+2. Onde você divulgou essa vaga e o que funcionou (ou deu errado) nesses canais?
+3. Quanto tempo o quarto costuma ficar vazio e qual é o impacto financeiro (rateio de contas) para vocês nesse período?
+4. Foi difícil encontrar alguém que se encaixasse no "perfil" (hábitos, rotina, limpeza) de quem já morava na casa?
+5. Você (ou a casa) estaria disposto a pagar uma taxa simbólica (ex: R$ 5 a R$ 10) para impulsionar esse anúncio em um local focado em universitários, para achar alguém compatível mais rápido e evitar pagar a parte do aluguel do quarto vazio?
+
+**Captação para Teste do MVP (Opcional - Fim da Entrevista):**
+Ao final da coleta dos dados sobre o problema, incluiremos uma pergunta opcional solicitando o e-mail ou telefone de contato daqueles que teriam interesse em ser voluntários para avaliar um futuro protótipo acadêmico construído pelo grupo na próxima fase do projeto.
+
+**Responsabilidades dos integrantes:**
+Todos os integrantes do grupo atuarão de forma conjunta e colaborativa nesta etapa de validação. As responsabilidades serão compartilhadas, com toda a equipe participando ativamente da elaboração do Termo de Consentimento e estruturação do questionário no Google Forms. Da mesma forma, os membros se revezarão na condução das entrevistas presenciais no campus e nas abordagens digitais. Ao final da coleta, o grupo se reunirá integralmente para tabular os resultados, analisar os padrões identificados, validar as hipóteses e redigir o relatório de decisão para a Entrega 2.
 
 
 ## Referências
