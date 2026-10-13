@@ -128,6 +128,25 @@ A pergunta registrou 13 respostas, com a seguinte distribuição:
 
 A distribuição revela uma diversidade de condições de moradia entre os participantes. A maior parcela, correspondente a 38,5%, mora com pais ou familiares, enquanto 23,1% vivem em apartamentos ou casas compartilhadas. As demais respostas estão distribuídas entre morar sozinho, com amigos ou colegas, em república ou com companheiro(a). Essa diversidade é relevante para o Acomoda UFLA, pois permite considerar diferentes experiências e necessidades habitacionais. Além disso, a presença de participantes que vivem em moradias compartilhadas é especialmente pertinente para investigar questões como divisão de despesas, convivência e preenchimento de vagas disponíveis.
 
+## 5. Descobertas e Comportamento Atual
+
+### 5.1. Síntese do Comportamento Atual
+A pesquisa indicou que o **WhatsApp e as imobiliárias** são os canais de busca mais utilizados pelos respondentes (com 4 respostas cada). Constatou-se que as informações sobre moradias estão fortemente pulverizadas entre grupos de WhatsApp, Facebook, Instagram, indicações informais e sites de imobiliárias locais. Essa fragmentação torna o processo de busca ineficiente e expõe os estudantes a riscos de desinformação.
+
+### 5.2. Padrão 1: Dificuldade na Busca e Impacto Emocional
+Os dados apontam um forte atrito no processo atual: **6 em cada 7** participantes que buscaram moradia consideraram a experiência **difícil ou muito difícil**. A média de dificuldade atribuída por esse grupo foi de **4,43 em uma escala de 5,0**, sendo que **57,1% (4 de 7)** classificaram a dificuldade no nível máximo (5 de 5). Como consequência direta dessa jornada, o **estresse e a ansiedade** lideram os impactos negativos, relatados por **71,4%** dos buscadores (5 respostas) ao longo do processo.
+
+### 5.3. Padrão 2: Falta de Transparência Financeira e "Contas Invisíveis"
+A ausência de previsibilidade financeira mostrou-se um gargalo crítico: **100% dos participantes** que buscaram moradia relataram **não ter clareza absoluta sobre o custo final mensal** (aluguel somado às contas) antes da assinatura do contrato. As "contas invisíveis" mais comuns identificadas foram **Água/Energia** (4 ocorrências) e **Internet** (3). 
+
+Nos relatos qualitativos, os respondentes destacaram surpresas orçamentárias frequentes. Foram citados casos de condomínios com aumentos imprevistos expressivos (como um salto de R$ 180 para R$ 300), promessas enganosas de infraestrutura (como vagas de garagem inacessíveis), além da cobrança de taxas extras inesperadas (limpeza/caixinha) e imóveis apresentando vícios ocultos.
+
+### 5.4. Padrão 3: Convivência e Fit Cultural
+A dinâmica social e a compatibilidade comportamental confirmaram-se como fatores determinantes. Aspectos inegociáveis de convivência guiam a tomada de decisão, com destaque para o **nível de limpeza e organização** (citado por 6 respondentes) e o **respeito ao espaço individual e à privacidade** (5 menções). A pesquisa revelou que a incompatibilidade de perfis e hábitos é um fator crítico na retenção: **85,7% dos buscadores** (6 de 7) relataram já ter desistido de uma opção de moradia ou precisado realizar uma mudança precipitada para evitar atritos de convivência.
+
+### 5.5. Principais Achados: A Dinâmica de Oferta e Repasse
+A pesquisa também investigou os desafios de quem precisa ofertar vagas ou repassar contratos. Verificou-se que os ofertantes estão expostos a **prejuízos financeiros iminentes**, visto que metade das vagas preenchidas ficou ociosa por menos de 1 semana, mas esse curto intervalo já foi suficiente para gerar custos adicionais (2 relatos). Nesse cenário, os atuais moradores são obrigados a arcar com o **rateio integral do aluguel e das despesas** enquanto o quarto permanece desocupado, evidenciando uma dor significativa também na ponta da oferta.
+
 ## 6. Validação das Hipóteses
 
 Com base no cruzamento das respostas do formulário digital e nos relatos qualitativos, o grupo analisou a validade das premissas originais estabelecidas na Entrega 1.
