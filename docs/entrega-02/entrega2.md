@@ -190,3 +190,78 @@ Criamos três personas orientadas a objetivos, estruturadas não apenas por dado
 -   **Comportamento:** Publica textos detalhados nos grupos de WhatsApp explicando as regras da casa para tentar filtrar os interessados, mas percebe que a maioria das pessoas não lê o anúncio completo.
 -   **Dores & Frustrações:** O risco iminente de ter que tirar dinheiro do próprio bolso para cobrir o terço ocioso do aluguel. Perde muito tempo respondendo curiosos e entrevistando candidatos com perfil totalmente incompatível com a casa (ex: festeiros ou pessoas sem comprometimento financeiro).
 -   **Objetivo de Uso:** Divulgar a vaga de forma eficiente e filtrada para repassar o contrato rapidamente, conectando-se apenas com candidatos que já deem "match" com a rotina e as exigências da casa, evitando perda de tempo.
+
+## 8. Análise de Concorrentes
+Comparação detalhada de 5 alternativas atualmente utilizadas para buscar ou ofertar moradias:
+
+### 8.1. Morapp
+- **Solução:** Plataforma digital focada em conectar estudantes a repúblicas e moradias universitárias.
+- **Público:** Estudantes universitários (calouros e veteranos) e gestores de repúblicas.
+- **Problema tratado:** A dificuldade de encontrar vagas exclusivas para estudantes de forma centralizada.
+- **Funcionalidades principais:** Busca de vagas por universidade, fotos dos locais, perfis das repúblicas, filtros básicos.Forma de acesso: Aplicativo móvel e plataforma Web.
+Modelo de receita: Planos de assinatura ou taxas para que repúblicas tenham maior destaque na plataforma.
+- **Preço:** Gratuito para quem busca; planos pagos ou taxas eventuais para quem oferta com destaque.
+- **Pontos fortes:** Foco exclusivo no nicho de moradia universitária e interface voltada para o estudante.
+- **Limitações:** Muitas vezes é mais voltado para repúblicas tradicionais e falha em detalhar as "contas invisíveis" (água, luz, condomínio) e em mapear profundamente o fit cultural dos moradores.
+- **Oportunidade:** O Acomoda UFLA pode se destacar ao trazer transparência financeira total e um sistema focado na compatibilidade de convivência e rotina para todo tipo de moradia compartilhada, não apenas repúblicas institucionais.
+
+### 8.2. Grupos de Facebook
+
+- **Solução:** Comunidades digitais (ex: "Repúblicas UFLA", "Dividir Moradia Lavras") onde os próprios usuários publicam as vagas.Público: Público geral e comunidade universitária.
+- **Problema tratado:** Conexão direta e orgânica entre locadores/ofertantes e estudantes interessados.
+- **Funcionalidades principais:** Feed de publicações, comentários públicos e chat via Messenger.
+- **Forma de acesso:** Plataforma Web e Aplicativo (Facebook).
+- **Modelo de receita:** Baseado em publicidade indireta na rede social (Meta).
+- **Preço:** Totalmente gratuito para uso.Pontos fortes: Alto alcance orgânico, fácil acesso e grande volume de postagens diárias.
+- **Limitações:** Extrema falta de padronização nas informações, postagens que "somem" rapidamente no feed, alto risco de golpes (falsas cauções) e ausência de filtros de busca refinados.
+- **Oportunidade:** Oferecer um ambiente seguro, com dados estruturados e padronizados, onde o estudante não precisa perder tempo rolando feeds infinitos para descobrir que o local não aceita seu perfil.
+
+### 8.3. Listas e Grupos de WhatsApp
+
+- **Solução:** Grupos de mensagens instantâneas voltados para os centros acadêmicos ou turmas da universidade.
+- **Público:** Estudantes locais e suas redes de contatos na UFLA.
+- **Problema tratado:** Divulgação rápida e direta para uma rede de contatos quente.
+- **Funcionalidades principais:** Envio de textos, fotos rápidas e comunicação imediata.
+- **Forma de acesso:** Aplicativo móvel e WhatsApp Web.
+- **Modelo de receita:** Gratuito (monetização exclusiva da Meta para contas Business).
+- **Preço:** Gratuito.
+- **Pontos fortes:** Comunicação instantânea, familiaridade do público e confiança por ser, muitas vezes, repassado por colegas.
+- **Limitações:** Informações caóticas, necessidade de chamar no privado ("chama no inbox") para descobrir detalhes cruciais como preço, e impossibilidade de realizar buscas com filtros estruturados.
+- **Oportunidade:** Centralizar as conversas num sistema que já exige o preenchimento de todos os requisitos (preço total, regras da casa) antes do primeiro contato, economizando o tempo gasto respondendo curiosos que não têm fit com a vaga.
+
+### 8.4. Site OLX
+
+- **Solução:** Plataforma de classificados gerais na internet para locação e venda de imóveis.
+- **Público:** Público em geral, proprietários, corretores e interessados em moradia.
+- **Problema tratado:** Concentração de oferta e demanda imobiliária de forma abrangente.
+- **Funcionalidades principais:** Filtros de busca por valor e localidade, galeria de fotos e chat integrado.
+- **Forma de acesso:** Plataforma Web e Aplicativo móvel.
+- **Modelo de receita:** Cobrança por limites de anúncios, destaques patrocinados e publicidade de terceiros.
+- **Preço:** Gratuito para anúncio básico; pago para destaques ou alto volume.
+- **Pontos fortes:** Grande infraestrutura, excelente SEO (aparece rápido no Google) e base massiva de usuários.
+- **Limitações:** Totalmente genérico, não foca nas necessidades do universitário (como proximidade do campus específico), não lida bem com divisão de quartos (geralmente foca no imóvel inteiro) e não aborda questões de convivência.
+- **Oportunidade:** Abordar diretamente o sub-nicho de repasse de quartos e divisão de despesas (peer-to-peer estudantil), permitindo avaliações de perfil comportamental que a OLX ignora.
+
+### 8.5. Imobiliárias Tradicionais
+
+- **Solução:** Intermediação profissional da locação de casas e apartamentos físicos.
+- **Público:** Proprietários de imóveis e inquilinos com capacidade de comprovação de renda e garantias.
+- **Problema tratado:** Segurança jurídica do contrato de locação e gestão do imóvel.
+- **Funcionalidades principais:** Visitas acompanhadas, confecção de contratos, vistoria documentada e garantias locatícias.
+- **Forma de acesso:** Lojas físicas e sites institucionais próprios.
+- **Modelo de receita:** Taxa de administração mensal e cobrança do primeiro aluguel integral do proprietário.
+- **Preço:** Custo alto para o locatário devido às exigências (fiador, caução alta ou seguro fiança).
+- **Pontos fortes:** Segurança jurídica, profissionalismo e garantia de procedência do imóvel.
+- **Limitações:** Extrema burocracia para estudantes migratórios, exigência de fiador (muitas vezes local) e ausência de serviço de intermediação para alugar apenas um "quarto" dentro de uma residência já ocupada.
+- **Oportunidade:** Desburocratizar o acesso a repasses de vagas e contratos já em andamento, focando apenas na facilitação do encontro entre o estudante que precisa da vaga e quem já tem o imóvel alugado.
+
+## 9. Decisão do Grupo
+
+- **Veredito:** Prosseguir com ajustes.
+
+**Justificativa:**
+As evidências coletadas por meio do formulário e das análises qualitativas provaram categoricamente a existência das dores propostas na hipótese inicial. Ficou demonstrado que o processo de busca é fragmentado e estressante, com 6 em cada 7 estudantes classificando a jornada como difícil ou muito difícil e apontando impactos emocionais diretos, como estresse e ansiedade.
+
+Além disso, a falta de transparência — nossa premissa central — foi validada com 100% dos participantes relatando ausência de clareza financeira e o impacto das "contas invisíveis" antes de fechar o negócio. Da mesma forma, as dores em relação ao alinhamento de convivência geraram desistências ou mudanças precipitadas em quase 86% dos casos analisados.   
+
+Portanto, a decisão é prosseguir para o desenvolvimento do MVP (Produto Mínimo Viável). No entanto, faremos os ajustes percebidos na pesquisa: o projeto não será apenas um classificado de fotos e preços básicos, mas focará rigorosamente na padronização dos custos totais mensais e na compatibilidade comportamental (fit cultural), atuando como um mitigador das frustrações mapeadas nesta validação.
