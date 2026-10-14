@@ -39,7 +39,7 @@ Essas hipóteses foram investigadas por meio das respostas ao formulário. Sua c
 
 ### 3.1. Método Utilizado
 
-A coleta foi realizada exclusivamente por meio de um formulário online no Google Forms. Não foram realizadas entrevistas semiestruturadas presenciais. O instrumento continha 22 perguntas organizadas em cinco seções. Foram utilizadas perguntas fechadas, questões de múltipla escolha, perguntas de seleção de várias alternativas, uma escala de avaliação e perguntas abertas.
+A coleta de dados foi realizada por meio de um questionário online estruturado via Google Forms, permitindo alcance rápido e respostas padronizadas do público universitário. O instrumento continha 22 perguntas organizadas em cinco seções. Foram utilizadas perguntas fechadas, questões de múltipla escolha, perguntas de seleção de várias alternativas, uma escala de avaliação e perguntas abertas.
 
 As respostas foram analisadas descritivamente, a partir das quantidades e dos percentuais apresentados nos gráficos e dos relatos textuais fornecidos pelos participantes. O formulário registra 13 respostas em algumas perguntas. O número de respostas varia entre as questões, em parte porque nem todos responderam a todas as perguntas e porque algumas delas se aplicam apenas a quem teve determinada experiência.
 
@@ -153,9 +153,9 @@ Com base no cruzamento das respostas do formulário digital e nos relatos qualit
 
 *   **Hipótese de Problema (Confirmada):** A premissa de que a busca gera ansiedade e dificuldade devido à fragmentação de informações foi fortemente validada. Dos estudantes que buscaram moradia, 6 em cada 7 classificaram o processo como "difícil" ou "muito difícil". O estresse e a ansiedade foram citados como os impactos mais frequentes (5 ocorrências).
   
-*   **Hipótese de Necessidade (Confirmada com ênfase):** A necessidade de transparência financeira e fit cultural provou-se crítica. 100% dos respondentes relataram não ter o valor exato dos custos antes de se mudar (70% tinham apenas estimativa e 30% descobriram "contas invisíveis" posteriormente, como taxas de água, energia e condomínios com valores mascarados). Além disso, a incompatibilidade de hábitos sociais (limpeza, fumar, respeito à privacidade) fez com que 6 em cada 7 pessoas já desistissem de uma opção de moradia.
+*   **Hipótese de Necessidade (Confirmada com ênfase):** A necessidade de transparência financeira e fit cultural provou-se crítica. 100% dos respondentes relataram não ter o valor exato dos custos antes de se mudar (71% tinham apenas estimativa e 29% descobriram "contas invisíveis" posteriormente, como taxas de água, energia e condomínios com valores mascarados). Além disso, a incompatibilidade de hábitos sociais (limpeza, fumar, respeito à privacidade) fez com que 6 em cada 7 pessoas já desistissem de uma opção de moradia.
   
-*   **Hipótese de Cliente (Inconclusiva nesta amostra):** A premissa de que estudantes estariam dispostos a pagar para destacar anúncios de vagas não pôde ser confirmada com os dados levantados. Em nossa amostra atual, apenas 40% dos participantes relataram a necessidade de ofertar vagas, e metade destes conseguiu preencher o quarto em menos de uma semana utilizando canais orgânicos e gratuitos (WhatsApp e indicações). Embora a dor do prejuízo financeiro com o quarto ocioso tenha sido citada pelos respondentes, os dados limitados desta primeira sondagem são inconclusivos para cravar se a dificuldade de repasse gera intenção de pagamento no modelo estudante-para-estudante. Esse ponto exigirá uma investigação futura com uma base maior de dados ou uma possível adequação no modelo de monetização.
+*   **Hipótese de Cliente (Inconclusiva nesta amostra):** A premissa de que estudantes estariam dispostos a pagar para destacar anúncios de vagas não pôde ser confirmada com os dados levantados. Em nossa amostra, a proporção de participantes que relataram a necessidade de ofertar vagas foi minoritária (cerca de 31%), e metade destes conseguiu preencher o quarto em menos de uma semana utilizando canais orgânicos e gratuitos (WhatsApp e indicações). Embora a dor do prejuízo financeiro com o quarto ocioso tenha sido citada pelos respondentes, os dados limitados desta primeira sondagem são inconclusivos para cravar se a dificuldade de repasse gera intenção de pagamento no modelo estudante-para-estudante. Esse ponto exigirá uma investigação futura com uma base maior de dados ou uma possível adequação no modelo de monetização.
   
 *   **Hipótese Preliminar de Valor (Confirmada com ajustes):** O valor da plataforma não reside apenas na centralização e exibição de fotos do local. O projeto deverá pivotar ligeiramente para dar protagonismo à **transparência financeira e contratual** (detalhamento de IPTU, condomínio, taxas de limpeza) e à **validação comportamental**. A plataforma agregará valor se funcionar como um mitigador de "surpresas financeiras" e atritos de convivência.
 
@@ -165,7 +165,7 @@ Com base no cruzamento das respostas do formulário digital e nos relatos qualit
 O problema central mantém-se na desorganização do processo de busca habitacional, porém com um novo agravante descoberto na pesquisa: **a assimetria de informações financeiras e comportamentais**. O processo atual, dependente de redes sociais genéricas, omite sistematicamente as "contas invisíveis" (como taxas embutidas e aumentos de condomínio) e as regras reais de convivência do ambiente. Isso resulta em estresse na busca, surpresas orçamentárias (conforme relatado nas entrevistas qualitativas) e alta rotatividade causada por quebra de expectativa entre os moradores.
 
 ### 7.2. Público-Alvo Revisado
-O foco recai sobre universitários migrantes (que representaram 80% da nossa amostra), abrangendo o ciclo completo da moradia universitária: desde o calouro inexperiente até os estudantes em estágios avançados (70% da amostra situava-se do 5º período em diante). O público divide-se em duas frentes de atuação com dores distintas:
+O foco recai sobre universitários migrantes (que representaram aproximadamente 77% da nossa amostra), abrangendo o ciclo completo da moradia universitária: desde o calouro inexperiente até os estudantes em estágios avançados (cerca de 77% da amostra situava-se do 5º período em diante). O público divide-se em duas frentes de atuação com dores distintas:
 1.  **Buscadores (Demanda):** Estudantes com orçamento restrito que precisam dividir custos (repúblicas ou apartamentos), valorizando a previsibilidade financeira e a compatibilidade de rotina.
 2.  **Ofertantes/Repasse (Oferta):** Estudantes que administram a moradia e precisam evitar o rateio de prejuízos de quartos vazios, mas esbarram na dificuldade de encontrar candidatos com rotina compatível apenas utilizando o boca a boca.
 
@@ -198,21 +198,23 @@ Comparação detalhada de 5 alternativas atualmente utilizadas para buscar ou of
 - **Solução:** Plataforma digital focada em conectar estudantes a repúblicas e moradias universitárias.
 - **Público:** Estudantes universitários (calouros e veteranos) e gestores de repúblicas.
 - **Problema tratado:** A dificuldade de encontrar vagas exclusivas para estudantes de forma centralizada.
-- **Funcionalidades principais:** Busca de vagas por universidade, fotos dos locais, perfis das repúblicas, filtros básicos.Forma de acesso: Aplicativo móvel e plataforma Web.
-Modelo de receita: Planos de assinatura ou taxas para que repúblicas tenham maior destaque na plataforma.
+- **Funcionalidades principais:** Busca de vagas por universidade, fotos dos locais, perfis das repúblicas, filtros básicos.
+- **Forma de acesso:** Aplicativo móvel e plataforma Web.
+- **Modelo de receita:** Planos de assinatura ou taxas para que repúblicas tenham maior destaque na plataforma.
 - **Preço:** Gratuito para quem busca; planos pagos ou taxas eventuais para quem oferta com destaque.
 - **Pontos fortes:** Foco exclusivo no nicho de moradia universitária e interface voltada para o estudante.
 - **Limitações:** Muitas vezes é mais voltado para repúblicas tradicionais e falha em detalhar as "contas invisíveis" (água, luz, condomínio) e em mapear profundamente o fit cultural dos moradores.
 - **Oportunidade:** O Acomoda UFLA pode se destacar ao trazer transparência financeira total e um sistema focado na compatibilidade de convivência e rotina para todo tipo de moradia compartilhada, não apenas repúblicas institucionais.
 
 ### 8.2. Grupos de Facebook
-
-- **Solução:** Comunidades digitais (ex: "Repúblicas UFLA", "Dividir Moradia Lavras") onde os próprios usuários publicam as vagas.Público: Público geral e comunidade universitária.
+- **Solução:** Comunidades digitais (ex: "Repúblicas UFLA", "Dividir Moradia Lavras") onde os próprios usuários publicam as vagas.
+- **Público:** Público geral e comunidade universitária.
 - **Problema tratado:** Conexão direta e orgânica entre locadores/ofertantes e estudantes interessados.
 - **Funcionalidades principais:** Feed de publicações, comentários públicos e chat via Messenger.
 - **Forma de acesso:** Plataforma Web e Aplicativo (Facebook).
 - **Modelo de receita:** Baseado em publicidade indireta na rede social (Meta).
-- **Preço:** Totalmente gratuito para uso.Pontos fortes: Alto alcance orgânico, fácil acesso e grande volume de postagens diárias.
+- **Preço:** Totalmente gratuito para uso.
+- **Pontos fortes:** Alto alcance orgânico, fácil acesso e grande volume de postagens diárias.
 - **Limitações:** Extrema falta de padronização nas informações, postagens que "somem" rapidamente no feed, alto risco de golpes (falsas cauções) e ausência de filtros de busca refinados.
 - **Oportunidade:** Oferecer um ambiente seguro, com dados estruturados e padronizados, onde o estudante não precisa perder tempo rolando feeds infinitos para descobrir que o local não aceita seu perfil.
 
