@@ -2,16 +2,7 @@
 
 ## 1. Identificação do Grupo
 
-| Nome do Empreendimento | Link do repositório |
-|---|---|
-| Acomoda UFLA | https://github.com/Ez1309/empreendedorismo |
-
-| Integrantes | Usuário no GitHub |
-|---|---|
-| Ezequiel Dominguez Santos| [@Ez1309](https://github.com/Ez1309) |
-| Nicolas Matheus Lima Oliveira | [@nicolas-mtheus](https://github.com/nicolas-mtheus) |
-| Anthony Jose da Silva| [@AnthonyJSilva03](https://github.com/AnthonyJSilva03) |
-| Lucas Emanuel Neves de Sousa | [@lucasensousa](https://github.com/lucasensousa) |
+...
 
 ---
 
@@ -74,17 +65,11 @@ Esses resultados apontam para duas necessidades relacionadas: conhecer previamen
 
 ## 3. Business Model Canvas (BMC)
 
-O Business Model Canvas a seguir foi desenvolvido com base nos aprendizados consolidados nas etapas anteriores (Entrega 1 e Validação da Entrega 2). A plataforma opera sob o modelo de **Plataforma Multilateral**, conectando quem busca e quem oferta moradia estudantil em Lavras, com relacionamento **Self-service** e estratégia de monetização **Freemium com Anúncios Hiperlocais**, eliminando qualquer cobrança direta ao estudante universitário para garantir tração e efeito de rede.
+O Business Model Canvas a seguir foi desenvolvido com base nos aprendizados consolidados nas etapas anteriores (Entrega 1 e Validação da Entrega 2). A plataforma opera sob o modelo de **Plataforma Multilateral**, conectando quem busca e quem oferta moradia estudantil em Lavras, com relacionamento **Self-service** e estratégia de monetização **Freemium com Anúncios Locais**, eliminando qualquer cobrança direta ao estudante universitário para garantir tração e efeito de rede.
 
 ### 3.1. Quadro Sintético do Business Model Canvas
 
-| Parcerias Principais | Atividades Principais | Proposta de Valor | Relacionamento com Clientes | Segmentos de Clientes |
-| :--- | :--- | :--- | :--- | :--- |
-| • **Comunidade Estudantil:** CAs, DCE e Atléticas da UFLA.<br><br>• **Repúblicas Tradicionais:** Parcerias para anúncios padronizados.<br><br>• **Comércio e Serviços Locais:** Restaurantes, marmitarias, lavanderias e academias.<br><br>• **Base de Voluntários:** 8 respondentes validados no Forms para testes contínuos.<br><br>• **Infraestrutura Free:** GitHub e Vercel. | • **Desenvolvimento Contínuo:** Evolução do Web App responsivo (mobile-first).<br><br>• **Curadoria e Padronização:** Obrigatoriedade de abertura de contas invisíveis e tags de convivência.<br><br>• **Marketing Comunitário:** Divulgação orgânica no início dos semestres letivos.<br><br>• **Prospecção de Anunciantes:** Captação de parceiros comerciais no entorno do campus. | **Para quem busca (Estudantes):**<br>• *Redução de Risco:* Fim das "contas invisíveis" (previsibilidade orçamentária total).<br>• *Conveniência & Fit Cultural:* Filtros de estilo de vida (fumo, pets, barulho, rotina de limpeza).<br><br>**Para quem oferta (Repúblicas/Moradores):**<br>• *Triagem Qualificada:* Anúncios detalhados que eliminam curiosos sem perfil.<br>• *Agilidade no Repasse:* Menor tempo de vacância de quartos.<br><br>**Para Anunciantes Locais:**<br>• Canal hiperlocal com o público universitário recém-chegado. | • **Self-service Automatizado:** Cadastro autônomo de vagas e busca livre via filtros.<br><br>• **Comunitário e de Confiança:** Plataforma desenvolvida "de estudante para estudante".<br><br>• **Canal de Denúncias:** Mecanismo simplificado para sinalizar dados inconsistentes. | **Plataforma Multilateral:**<br><br>1. **Demanda:** Calouros migrantes e veteranos em transição da UFLA.<br><br>2. **Oferta:** Alunos gestores de repúblicas ou apartamentos que necessitam repassar contratos ou preencher vagas.<br><br>3. **Anunciantes Locais (B2B):** Comércios e prestadores de serviços de Lavras que buscam atingir o universitário. |
-| **Recursos Principais** | | | **Canais** | |
-| • **Físicos/Hardware:** Computadores e notebooks pessoais da equipe; smartphones para testes.<br><br>• **Tecnológicos/Software:** Código-fonte do Web App, banco de dados estruturado.<br><br>• **Humanos:** 4 desenvolvedores/estudantes de TI da UFLA.<br><br>• **Infraestrutura Digital Gratuita:** GitHub, Vercel, Figma e Google Workspace. | | | • **Web App Responsivo:** Acesso via navegador sem necessidade de instalação.<br><br>• **Botão "Chamar no WhatsApp":** Contato direto e imediato.<br><br>• **Canais Comunitários da UFLA:** Grupos de WhatsApp, murais do campus e RU.<br><br>• **Redes Sociais Orgânicas:** Instagram e parcerias com CAs. | |
-| **Estrutura de Custos** | | **Fontes de Receita** | | |
-| • **Custo Financeiro Direto no MVP:** **R$ 0,00 (Orçamento Zero)**, utilizando tiers gratuitos.<br>• **Custo de Oportunidade:** Horas de dedicação da equipe de TI conciliadas com a graduação.<br>• **Custos Futuros de Escala:** Registro de domínio próprio e materiais impressos. | | • **Modelo Freemium Estudantil:** Acesso, busca e publicação de vagas 100% gratuitos para os alunos.<br>• **Publicidade Hiperlocal (Ads B2B):** Banners e cards patrocinados de comércios próximos à UFLA.<br>• **Parcerias com Cupons Universitários:** Comissões e patrocínios de estabelecimentos locais. | | |
+![Business Model Canvas - Acomoda UFLA](../../evidencias/imagens/BMC.svg)
 
 ### 3.2. Detalhamento Aprofundado dos 9 Blocos do BMC
 
@@ -111,10 +96,8 @@ A proposta de valor é categorizada como de **Redução de Risco** e **Conveniê
 - **Mecanismos de Segurança:** Canal assíncrono simplificado de denúncia na interface para reportar anúncios suspeitos.
 
 #### 5. Fontes de Receita
-Pivotou-se para uma estratégia **Freemium com Monetização B2B por Publicidade Hiperlocal**:
 - **Base 100% Gratuita para Estudantes:** Gratuidade integral para quem busca e para quem cadastra vagas, viabilizando o efeito de rede.
 - **Publicidade Direcionada de Comércios Locais (Ads B2B):** Venda de espaços publicitários não invasivos para empresas do entorno da UFLA (restaurantes, papelarias, etc).
-- **Parcerias com Cupons Promocionais:** Acordos comerciais de patrocínio com estabelecimentos locais.
 
 #### 6. Recursos Principais
 - **Recursos Físicos:** Computadores e smartphones de uso pessoal da equipe.
@@ -131,8 +114,8 @@ Pivotou-se para uma estratégia **Freemium com Monetização B2B por Publicidade
 #### 8. Parceiros Principais
 - **Entidades Estudantis:** DCE, Centros Acadêmicos (CAs) e Atléticas Universitárias.
 - **Repúblicas Universitárias Tradicionais:** Validação da usabilidade da solução no início do semestre.
-- **Base de Voluntários:** Os 8 respondentes da pesquisa de validação que autorizaram contato via WhatsApp.
-- **Provedores de Nuvem:** GitHub e Vercel (serviços com cotas gratuitas).
+- **Comércio Local:** Estabelecimentos no entorno da UFLA que viabilizam o fluxo de receitas através de contratos de publicidade hiperlocal.
+- **Provedores de Nuvem:** GitHub, Vercel, Render e Supabase (serviços com cotas gratuitas).
 
 #### 9. Estrutura de Custos
 - **Custo Financeiro Direto no MVP (R$ 0,00):** Hospedagem e versionamento executados inteiramente dentro das cotas gratuitas de serviços Cloud.
@@ -147,24 +130,19 @@ Para assegurar a viabilidade de execução do Acomoda UFLA sem aporte externo de
 
 ### 4.1. Quadro Sintético do PBMC
 
-| Quem ajuda você | O que você faz | Como você ajuda | Como você interage | Quem você ajuda |
-| :--- | :--- | :--- | :--- | :--- |
-| • **8 Contatos Voluntários do Forms.**<br>• **Docente e Monitores.**<br>• **Comunidade Open Source.**<br>• **Provedores Gratuitos** (GitHub, Vercel). | • **Engenharia de Software:** Desenvolvimento frontend MVP.<br>• **Design e UI/UX:** Prototipação (Figma).<br>• **Testes com Usuários.**<br>• **Documentação.** | • **Solução Feita por Alunos:** Empatia com a rotina do universitário.<br>• **Execução Rápida:** MVP centrado estritamente na dor validada.<br>• **Entrega com Custo Zero.** | • **Com Usuários:** Comunicação ética e receptiva.<br>• **Na Equipe:** Comunicação ágil (WhatsApp/Discord).<br>• **Com o Professor:** Transparência e rigor acadêmico. | 1. **Comunidade Discente da UFLA.**<br>2. **Professor e Avaliadores.**<br>3. **Nossa Própria Equipe** (aquisição de experiência). |
-| **Quem você é e o que você tem** | | | **Como eles conhecem você e como você entrega** | |
-| • **Quem Somos:** 4 estudantes de TI da UFLA.<br>• **Competências:** Programação Web, UI/UX, Git e modelagem de dados.<br>• **Recursos:** Notebooks pessoais, celulares para homologação.<br>• **Limitações:** Orçamento ZERO e Escassez Severa de Tempo (sobrecarga acadêmica). | | | • **Repositório GitHub.**<br>• **Link de Produção:** Deploy gratuito via Vercel.<br>• **Contatos via WhatsApp** para testes.<br>• **Relatórios Acadêmicos.** | |
-| **O que você investe (Custos)** | | **O que você ganha (Benefícios e Retorno)** | | |
-| • **Tempo Pessoal:** Noites e finais de semana investidos.<br>• **Carga Cognitiva:** Gestão de prazos com outras disciplinas.<br>• **Depreciação de Equipamentos.**<br>• **Custo Financeiro:** R$ 0,00. | | • **Sucesso Acadêmico** na disciplina.<br>• **Portfólio Profissional** (Product Discovery até MVP).<br>• **Habilidades Práticas** em agilidade.<br>• **Impacto Social Local.** | | |
+![Personal Business Model Canvas - Acomoda UFLA](../../evidencias/imagens/PBMC.svg)
 
 ### 4.2. Detalhamento Aprofundado dos 9 Blocos do PBMC
-1. **Recursos e Competências:** Equipe composta por 4 estudantes de TI da UFLA (Ezequiel, Nicolas, Anthony e Lucas). Possuem competências em programação Web (HTML/CSS/React/Java/Spring), UI/UX e versionamento. Como limitações críticas, enfrentam **orçamento zero** e **escassez de tempo** devido à carga horária da graduação.
-2. **Atividades Principais:** Engenharia de software, design de produto (wireframes), condução de testes de usabilidade com voluntários e documentação técnica.
-3. **Clientes e Beneficiários:** Comunidade acadêmica (usuários), corpo docente (avaliadores) e os próprios membros da equipe (desenvolvimento profissional).
-4. **Valor Entregue:** Desenvolvimento empático e contextualizado ("de aluno para aluno") e comprovação de viabilidade técnica através de uma execução eficiente com custo zero.
-5. **Canais de Comunicação:** Deploy contínuo da aplicação, repositório documentado no GitHub e contato via WhatsApp com voluntários.
-6. **Relacionamento:** Dinâmica ágil internamente (Discord/WhatsApp), postura ética com os voluntários e respeito rigoroso aos prazos acadêmicos.
-7. **Parceiros Chave:** Os 8 voluntários do Google Forms, professor da disciplina e ecossistema de software livre (Vercel, React, GitHub).
-8. **Benefícios e Retorno:** Conclusão bem-sucedida da disciplina, construção de portfólio prático, domínio de ferramentas de negócios e impacto social mitigando uma dor real em Lavras.
-9. **Custos e Sacrifícios:** Investimento maciço de tempo pessoal (finais de semana), carga cognitiva conciliando matérias e depreciação de equipamentos próprios, mantendo o gasto financeiro estritamente em R$ 0,00.
+
+1. **Recursos e Competências:** Equipe composta por 4 estudantes de TI da UFLA (Ezequiel, Nicolas, Anthony e Lucas). Possuem competências em programação Web (HTML/CSS/React/Java/Spring), UI/UX (Figma) e versionamento (Git/GitHub). Como limitações críticas, enfrentam **orçamento zero** e **escassez severa de tempo** devido à alta carga horária da graduação.
+2. **Atividades Principais:** Engenharia de software (frontend e backend), design de produto (prototipação de wireframes), condução de testes de usabilidade com os usuários e elaboração de documentação técnica.
+3. **Clientes e Beneficiários:** Comunidade discente da UFLA (calouros e veteranos buscando moradia), moradores ofertando vagas (que precisam de agilidade e triagem no repasse) e a própria equipe (desenvolvimento profissional).
+4. **Valor Entregue:** Desenvolvimento empático e contextualizado ("de aluno para aluno"), com entrega de um MVP rápido focado estritamente na dor validada (transparência), e execução técnica provando a viabilidade de construir o produto com custo zero.
+5. **Canais de Comunicação:** Deploy contínuo da aplicação gerando uma URL pública, repositório de código aberto no GitHub e uso ativo do WhatsApp para agendar e conduzir os testes com os voluntários.
+6. **Relacionamento:** Comunicação ágil e contínua internamente na equipe (Discord/WhatsApp) e total transparência na condução, registro e apresentação dos resultados obtidos nos testes práticos.
+7. **Parceiros Chave:** Os 8 estudantes voluntários mapeados no Forms (que atuarão como *testers* iniciais), colegas de curso da UFLA (para obtenção de *feedback* informal constante) e Centros Acadêmicos (apoio na validação comunitária).
+8. **Benefícios e Retorno:** Aquisição de conhecimento teórico e prático de empreendedorismo, construção de portfólio de engenharia de software (de ponta a ponta) e impacto social ao criar uma ferramenta que ameniza uma dor real na cidade de Lavras.
+9. **Custos e Sacrifícios:** Investimento de tempo pessoal (noites e finais de semana), carga cognitiva elevada ao conciliar o projeto com as demais disciplinas de exatas e depreciação de equipamentos próprios, operando com custo financeiro rigorosamente mantido em R$ 0,00.
 
 ---
 
