@@ -261,3 +261,24 @@ Sem a pretensão de definir a arquitetura de produção em larga escala, o escop
     *   **Limitações de Infraestrutura Gratuita:** Lidar com o tempo de *cold start* (hibernação) do backend no Render e o limite de conexões simultâneas no banco de dados PostgreSQL nos *tiers* gratuitos durante os testes com os usuários.
 
 ---
+
+## 9. Wireframes Iniciais
+
+Para tangibilizar a nossa Proposta de Valor, desenvolvemos os protótipos das telas focados em resolver a dor central do usuário. A imagem abaixo ilustra as três telas principais do nosso fluxo: Tela Inicial, Tela de Filtros e o Card da Vaga (Detalhes).
+
+O destaque obrigatório nestes desenhos é a materialização da nossa proposta de valor em software. É possível observar claramente o detalhamento das "Contas Invisíveis" (transparência financeira decomposta no card da vaga) e as marcações de "Fit Cultural" (tags visuais de perfil de convivência, como regras de Limpeza, Pet e Fumo). Isso comprova como o conceito teórico foi traduzido para a interface visual.
+
+![Wireframe Inicial - Acomoda UFLA](../../evidencias/imagens/wireframe-inicial.jpg)
+
+---
+
+## 10. Plano de Desenvolvimento e Validação
+
+**Desenvolvimento**: Para a construção do software, adotaremos metodologias ágeis simplificadas para garantir entregas rápidas e de valor. Utilizaremos o GitHub Projects como nossa ferramenta principal de gestão de tarefas (Kanban). O trabalho será organizado em Sprints semanais, com foco absoluto e exclusivo na construção das funcionalidades classificadas como Must Have (essenciais para o MVP). Nenhuma funcionalidade extra será desenvolvida até que o núcleo do produto esteja operante.
+
+**Validação com Usuários**: A etapa de testes práticos com o público-alvo será guiada pelo roteiro de validação da disciplina.
+
+*   **Metodologia:** Aplicaremos rigorosamente o Roteiro de Entrevistas do Anexo C.
+*   **Participantes:** Entraremos em contato direto com as 8 pessoas que cederam e-mail e/ou WhatsApp durante a nossa pesquisa de campo realizada na Entrega 2.
+*   **Dinâmica do Teste:** Enviaremos o link do MVP funcional hospedado em nuvem para esses voluntários e daremos uma missão clara: pediremos que eles naveguem pela aplicação e tentem encontrar uma vaga que seja adequada ao perfil financeiro e comportamental de cada um.
+*   **Coleta de Dados:** Durante a execução da tarefa, registraremos todos os seus feedbacks, dificuldades de navegação e percepções. O objetivo central é confirmar se a transparência dos custos os deixou mais seguros para realizar a escolha em comparação aos métodos tradicionais (Facebook/WhatsApp).
