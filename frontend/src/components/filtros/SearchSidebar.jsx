@@ -27,13 +27,14 @@ export default function SearchSidebar({ filtros, setFiltros }) {
       ambienteSilencioso: false,
       tipoMoradia: 'todos',
       generoMoradia: 'todos',
-      termoBusca: ''
+      termoBusca: '',
+      ordenarPor: 'padrao'
     });
   };
 
   return (
-    <div 
-      className="rounded-2xl p-5 border sticky top-24 space-y-6 shadow-sm transition-colors duration-300"
+    <div
+      className="rounded-2xl p-5 border space-y-5 shadow-sm transition-colors duration-300"
       style={{
         backgroundColor: tema.cardBg, // Space Indigo (#2B2D42) no dark mode!
         borderColor: tema.border
@@ -99,6 +100,26 @@ export default function SearchSidebar({ filtros, setFiltros }) {
         </select>
       </div>
 
+     
+      {/* Ordenação */}
+      <div>
+        <label className="block text-xs font-bold uppercase tracking-wider mb-1.5" style={{ color: tema.text }}>
+          Ordenar por
+        </label>
+        <select
+          value={filtros.ordenarPor}
+          onChange={(e) => handleChange('ordenarPor', e.target.value)}
+          className="w-full px-3.5 py-2 text-sm border rounded-xl outline-none transition-all font-medium focus:ring-2"
+          style={{ backgroundColor: isDarkMode ? '#1F2133' : tema.bg, borderColor: tema.border, color: tema.text }}
+        >
+          <option value="padrao">Relevância</option>
+          <option value="preco_asc">Menor preço</option>
+          <option value="preco_desc">Maior preço</option>
+          <option value="distancia">Mais perto da UFLA</option>
+          <option value="bairro">Bairro (A-Z)</option>
+        </select>
+      </div>
+
       {/* Regras de Convivência */}
       <div className="pt-2 border-t" style={{ borderColor: tema.border }}>
         <label className="block text-xs font-bold uppercase tracking-wider mb-2.5" style={{ color: tema.text }}>
@@ -160,6 +181,28 @@ export default function SearchSidebar({ filtros, setFiltros }) {
           <option value="apartamento_dividido">Apartamento Dividido</option>
           <option value="kitnet">Kitnet Individual</option>
           <option value="pensionato">Pensionato</option>
+        </select>
+      </div>
+
+      {/* Gênero da moradia */}
+      <div className="pt-2 border-t" style={{ borderColor: tema.border }}>
+        <label className="block text-xs font-bold uppercase tracking-wider mb-1.5" style={{ color: tema.text }}>
+          Perfil da moradia
+        </label>
+        <select
+          value={filtros.generoMoradia}
+          onChange={(e) => handleChange('generoMoradia', e.target.value)}
+          className="w-full px-3.5 py-2 text-sm border rounded-xl outline-none transition-all font-medium focus:ring-2"
+          style={{
+            backgroundColor: isDarkMode ? '#1F2133' : tema.bg,
+            borderColor: tema.border,
+            color: tema.text
+          }}
+        >
+          <option value="todos">Todos</option>
+          <option value="feminina">Feminina</option>
+          <option value="masculina">Masculina</option>
+          <option value="mista">Mista</option>
         </select>
       </div>
     </div>
