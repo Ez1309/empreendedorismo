@@ -16,11 +16,12 @@ export function useVagas() {
     ambienteSilencioso: false,
     tipoMoradia: 'todos',
     generoMoradia: 'todos',
-    termoBusca: ''
+    termoBusca: '',
+    ordenarPor: 'padrao'
   });
 
   const vagasFiltradas = useMemo(() => {
-    return vagasMock.filter((vaga) => {
+    const filtradas = vagasMock.filter((vaga) => {
       // 1. Filtro por termo de busca textual (Fase 1 - Membro 1)
       if (filtros.termoBusca) {
         const termo = filtros.termoBusca.toLowerCase();
@@ -36,12 +37,11 @@ export function useVagas() {
       }
 
       // =========================================================================
-      // TODO [Membro 2 - Fase 2: Motor de Busca e Lógica]:
-      // Conectar e validar as condições de filtragem abaixo para habilitar
-      // a busca refinada por distância, regras de convivência e tipo de moradia.
+      // [Membro 2 - Fase 2: Motor de Busca e Lógica]:
+      // Filtros por distância, regras de convivência, tipo e gênero de moradia.
       // =========================================================================
 
-      /*
+
       // A. Filtro por distância máxima até a UFLA
       if (filtros.distanciaMaximaKm && vaga.distanciaUflaKm > Number(filtros.distanciaMaximaKm)) {
         return false;
@@ -65,10 +65,22 @@ export function useVagas() {
       if (filtros.generoMoradia !== 'todos' && vaga.generoMoradia !== filtros.generoMoradia) {
         return false;
       }
-      */
 
       return true;
     });
+
+    // Ordenação. Usa cópia para não alterar a lista original.
+    const ordenadas = [...filtradas];
+    if (filtros.ordenarPor === 'preco_asc') {
+      ordenadas.sort((a, b) => a.valorTotal - b.valorTotal);
+    } else if (filtros.ordenarPor === 'preco_desc') {
+      ordenadas.sort((a, b) => b.valorTotal - a.valorTotal);
+    } else if (filtros.ordenarPor === 'distancia') {
+      ordenadas.sort((a, b) => a.distanciaUflaKm - b.distanciaUflaKm);
+    } else if (filtros.ordenarPor === 'bairro') {
+      ordenadas.sort((a, b) => a.bairro.localeCompare(b.bairro, 'pt-BR'));
+    }
+    return ordenadas;
   }, [filtros]);
 
   return {
