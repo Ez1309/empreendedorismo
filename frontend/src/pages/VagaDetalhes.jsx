@@ -202,74 +202,219 @@ export default function VagaDetalhes({ vagaId }) {
               )}
             </section>
 
-            {/* TABELA DE CUSTOS TRANSPARENTES */}
+            {/* TABELA DE CUSTOS ABERTOS (A Solução da Dor Central) */}
             <section 
               className="p-6 sm:p-7 rounded-2xl border shadow-sm transition-colors"
               style={{ backgroundColor: tema.cardBg, borderColor: tema.border }}
             >
               <div className="pb-4 mb-4 border-b flex items-center justify-between" style={{ borderColor: tema.border }}>
                 <div>
-                  <h2 className="text-base font-bold" style={{ color: tema.text }}>
-                    Composição do valor mensal
-                  </h2>
+                  <div className="flex items-center gap-2">
+                    <ShieldCheck className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+                    <h2 className="text-base sm:text-lg font-black tracking-tight" style={{ color: tema.text }}>
+                      Tabela de Custos Abertos (Sem Contas Invisíveis)
+                    </h2>
+                  </div>
                   <p className="text-xs mt-0.5" style={{ color: tema.subtext }}>
-                    Transparência total para você saber exatamente quanto vai pagar.
+                    Transparência total para você saber exatamente quanto vai pagar antes do contato.
                   </p>
                 </div>
-                <div className="p-2 rounded-lg" style={{ backgroundColor: tema.secondaryBg, color: isDarkMode ? '#8FD1A8' : '#006B3E' }}>
-                  <ShieldCheck className="w-5 h-5" />
+                <div 
+                  className="px-3 py-1 rounded-lg text-xs font-bold border"
+                  style={{ 
+                    backgroundColor: isDarkMode ? 'rgba(143, 209, 168, 0.15)' : '#E8F5E9', 
+                    borderColor: isDarkMode ? '#8FD1A8' : '#A5D6A7',
+                    color: isDarkMode ? '#8FD1A8' : '#006B3E' 
+                  }}
+                >
+                  100% Transparente
                 </div>
               </div>
 
-              <div className="divide-y text-sm" style={{ borderColor: tema.border }}>
-                <div className="py-2.5 flex justify-between items-center">
-                  <span style={{ color: tema.subtext }}>Aluguel base</span>
-                  <span className="font-bold" style={{ color: tema.text }}>{formatCurrency(vaga.valorAluguel)}</span>
-                </div>
-                <div className="py-2.5 flex justify-between items-center">
-                  <span style={{ color: tema.subtext }}>Condomínio</span>
-                  <span className="font-bold" style={{ color: tema.text }}>{formatCurrency(vaga.custosDetalhados.condominio)}</span>
-                </div>
-                <div className="py-2.5 flex justify-between items-center">
-                  <span style={{ color: tema.subtext }}>Energia elétrica (estimada)</span>
-                  <span className="font-bold" style={{ color: tema.text }}>{formatCurrency(vaga.custosDetalhados.energiaEletrica)}</span>
-                </div>
-                <div className="py-2.5 flex justify-between items-center">
-                  <span style={{ color: tema.subtext }}>Água e saneamento</span>
-                  <span className="font-bold" style={{ color: tema.text }}>{formatCurrency(vaga.custosDetalhados.agua)}</span>
-                </div>
-                <div className="py-2.5 flex justify-between items-center">
-                  <span style={{ color: tema.subtext }}>Internet Wi-Fi</span>
-                  <span className="font-bold" style={{ color: tema.text }}>{formatCurrency(vaga.custosDetalhados.internet)}</span>
-                </div>
-                {vaga.custosDetalhados.iptu > 0 && (
-                  <div className="py-2.5 flex justify-between items-center">
-                    <span style={{ color: tema.subtext }}>IPTU proporcional</span>
-                    <span className="font-bold" style={{ color: tema.text }}>{formatCurrency(vaga.custosDetalhados.iptu)}</span>
-                  </div>
-                )}
-                {vaga.custosDetalhados.taxaLimpeza > 0 && (
-                  <div className="py-2.5 flex justify-between items-center">
-                    <span style={{ color: tema.subtext }}>Diarista / taxa de limpeza</span>
-                    <span className="font-bold" style={{ color: tema.text }}>{formatCurrency(vaga.custosDetalhados.taxaLimpeza)}</span>
-                  </div>
-                )}
-                {vaga.custosDetalhados.gas > 0 && (
-                  <div className="py-2.5 flex justify-between items-center">
-                    <span style={{ color: tema.subtext }}>Gás de cozinha</span>
-                    <span className="font-bold" style={{ color: tema.text }}>{formatCurrency(vaga.custosDetalhados.gas)}</span>
-                  </div>
-                )}
-
-                <div 
-                  className="pt-4 pb-1 flex justify-between items-baseline border-t-2"
-                  style={{ borderColor: isDarkMode ? '#8FD1A8' : '#006B3E' }}
-                >
-                  <span className="font-bold text-base" style={{ color: tema.text }}>Total mensal estimado</span>
-                  <span className="text-2xl font-black" style={{ color: isDarkMode ? '#8FD1A8' : '#006B3E' }}>
-                    {formatCurrency(vaga.valorTotal)}
-                  </span>
-                </div>
+              {/* Tabela Estruturada de Custos */}
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-xs sm:text-sm">
+                  <thead>
+                    <tr className="border-b" style={{ borderColor: tema.border, color: tema.subtext }}>
+                      <th className="pb-2.5 font-bold uppercase text-[11px] tracking-wider">Item de Custo</th>
+                      <th className="pb-2.5 font-bold uppercase text-[11px] tracking-wider hidden sm:table-cell">Natureza</th>
+                      <th className="pb-2.5 font-bold uppercase text-[11px] tracking-wider hidden md:table-cell">Detalhamento</th>
+                      <th className="pb-2.5 font-bold uppercase text-[11px] tracking-wider text-right">Valor Estimado</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y" style={{ borderColor: tema.border }}>
+                    <tr className="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                      <td className="py-2.5 font-semibold" style={{ color: tema.text }}>Aluguel Base</td>
+                      <td className="py-2.5 hidden sm:table-cell" style={{ color: tema.subtext }}>
+                        <span 
+                          className="px-2 py-0.5 rounded text-[11px] font-semibold"
+                          style={{
+                            backgroundColor: isDarkMode ? 'rgba(143, 209, 168, 0.15)' : '#E8F5E9',
+                            color: isDarkMode ? '#8FD1A8' : '#006B3E',
+                            border: isDarkMode ? '1px solid rgba(143, 209, 168, 0.3)' : '1px solid #C8E6C9'
+                          }}
+                        >
+                          Fixo
+                        </span>
+                      </td>
+                      <td className="py-2.5 text-xs hidden md:table-cell" style={{ color: tema.subtext }}>Valor fixo mensal do quarto/imóvel</td>
+                      <td className="py-2.5 font-bold text-right" style={{ color: tema.text }}>{formatCurrency(vaga.valorAluguel)}</td>
+                    </tr>
+                    <tr className="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                      <td className="py-2.5 font-semibold" style={{ color: tema.text }}>IPTU Proporcional</td>
+                      <td className="py-2.5 hidden sm:table-cell" style={{ color: tema.subtext }}>
+                        <span 
+                          className="px-2 py-0.5 rounded text-[11px] font-semibold"
+                          style={{
+                            backgroundColor: isDarkMode ? 'rgba(143, 209, 168, 0.15)' : '#E8F5E9',
+                            color: isDarkMode ? '#8FD1A8' : '#006B3E',
+                            border: isDarkMode ? '1px solid rgba(143, 209, 168, 0.3)' : '1px solid #C8E6C9'
+                          }}
+                        >
+                          Fixo rateado
+                        </span>
+                      </td>
+                      <td className="py-2.5 text-xs hidden md:table-cell" style={{ color: tema.subtext }}>Parcela mensal do imposto predial</td>
+                      <td className="py-2.5 font-bold text-right" style={{ color: vaga.custosDetalhados.iptu > 0 ? tema.text : tema.subtext }}>
+                        {vaga.custosDetalhados.iptu > 0 ? formatCurrency(vaga.custosDetalhados.iptu) : 'Isento'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                      <td className="py-2.5 font-semibold" style={{ color: tema.text }}>Energia Elétrica (Luz)</td>
+                      <td className="py-2.5 hidden sm:table-cell" style={{ color: tema.subtext }}>
+                        <span 
+                          className="px-2 py-0.5 rounded text-[11px] font-semibold"
+                          style={{
+                            backgroundColor: isDarkMode ? 'rgba(143, 209, 168, 0.15)' : '#E8F5E9',
+                            color: isDarkMode ? '#8FD1A8' : '#006B3E',
+                            border: isDarkMode ? '1px solid rgba(143, 209, 168, 0.3)' : '1px solid #C8E6C9'
+                          }}
+                        >
+                          Variável estimada
+                        </span>
+                      </td>
+                      <td className="py-2.5 text-xs hidden md:table-cell" style={{ color: tema.subtext }}>Média de consumo CEMIG rateada</td>
+                      <td className="py-2.5 font-bold text-right" style={{ color: tema.text }}>{formatCurrency(vaga.custosDetalhados.energiaEletrica)}</td>
+                    </tr>
+                    <tr className="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                      <td className="py-2.5 font-semibold" style={{ color: tema.text }}>Água e Saneamento</td>
+                      <td className="py-2.5 hidden sm:table-cell" style={{ color: tema.subtext }}>
+                        <span 
+                          className="px-2 py-0.5 rounded text-[11px] font-semibold"
+                          style={{
+                            backgroundColor: isDarkMode ? 'rgba(143, 209, 168, 0.15)' : '#E8F5E9',
+                            color: isDarkMode ? '#8FD1A8' : '#006B3E',
+                            border: isDarkMode ? '1px solid rgba(143, 209, 168, 0.3)' : '1px solid #C8E6C9'
+                          }}
+                        >
+                          Variável estimada
+                        </span>
+                      </td>
+                      <td className="py-2.5 text-xs hidden md:table-cell" style={{ color: tema.subtext }}>COPASA mensal rateada entre moradores</td>
+                      <td className="py-2.5 font-bold text-right" style={{ color: tema.text }}>{formatCurrency(vaga.custosDetalhados.agua)}</td>
+                    </tr>
+                    <tr className="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                      <td className="py-2.5 font-semibold" style={{ color: tema.text }}>Internet Wi-Fi Fibra</td>
+                      <td className="py-2.5 hidden sm:table-cell" style={{ color: tema.subtext }}>
+                        <span 
+                          className="px-2 py-0.5 rounded text-[11px] font-semibold"
+                          style={{
+                            backgroundColor: isDarkMode ? 'rgba(143, 209, 168, 0.15)' : '#E8F5E9',
+                            color: isDarkMode ? '#8FD1A8' : '#006B3E',
+                            border: isDarkMode ? '1px solid rgba(143, 209, 168, 0.3)' : '1px solid #C8E6C9'
+                          }}
+                        >
+                          Fixo rateado
+                        </span>
+                      </td>
+                      <td className="py-2.5 text-xs hidden md:table-cell" style={{ color: tema.subtext }}>Banda larga de alta velocidade</td>
+                      <td className="py-2.5 font-bold text-right" style={{ color: tema.text }}>{formatCurrency(vaga.custosDetalhados.internet)}</td>
+                    </tr>
+                    <tr className="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                      <td className="py-2.5 font-semibold" style={{ color: tema.text }}>Condomínio</td>
+                      <td className="py-2.5 hidden sm:table-cell" style={{ color: tema.subtext }}>
+                        <span 
+                          className="px-2 py-0.5 rounded text-[11px] font-semibold"
+                          style={{
+                            backgroundColor: isDarkMode ? 'rgba(143, 209, 168, 0.15)' : '#E8F5E9',
+                            color: isDarkMode ? '#8FD1A8' : '#006B3E',
+                            border: isDarkMode ? '1px solid rgba(143, 209, 168, 0.3)' : '1px solid #C8E6C9'
+                          }}
+                        >
+                          {vaga.custosDetalhados.condominio > 0 ? 'Fixo' : 'Isento'}
+                        </span>
+                      </td>
+                      <td className="py-2.5 text-xs hidden md:table-cell" style={{ color: tema.subtext }}>Taxa mensal predial</td>
+                      <td className="py-2.5 font-bold text-right" style={{ color: vaga.custosDetalhados.condominio > 0 ? tema.text : tema.subtext }}>
+                        {vaga.custosDetalhados.condominio > 0 ? formatCurrency(vaga.custosDetalhados.condominio) : 'Isento'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                      <td className="py-2.5 font-semibold" style={{ color: tema.text }}>Diarista / Taxa de Limpeza</td>
+                      <td className="py-2.5 hidden sm:table-cell" style={{ color: tema.subtext }}>
+                        <span 
+                          className="px-2 py-0.5 rounded text-[11px] font-semibold"
+                          style={{
+                            backgroundColor: isDarkMode ? 'rgba(143, 209, 168, 0.15)' : '#E8F5E9',
+                            color: isDarkMode ? '#8FD1A8' : '#006B3E',
+                            border: isDarkMode ? '1px solid rgba(143, 209, 168, 0.3)' : '1px solid #C8E6C9'
+                          }}
+                        >
+                          {vaga.custosDetalhados.taxaLimpeza > 0 ? 'Rateio' : 'Escala'}
+                        </span>
+                      </td>
+                      <td className="py-2.5 text-xs hidden md:table-cell" style={{ color: tema.subtext }}>Limpeza de áreas comuns</td>
+                      <td className="py-2.5 font-bold text-right" style={{ color: vaga.custosDetalhados.taxaLimpeza > 0 ? tema.text : tema.subtext }}>
+                        {vaga.custosDetalhados.taxaLimpeza > 0 ? formatCurrency(vaga.custosDetalhados.taxaLimpeza) : 'Sem custo extra'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                      <td className="py-2.5 font-semibold" style={{ color: tema.text }}>Gás de Cozinha</td>
+                      <td className="py-2.5 hidden sm:table-cell" style={{ color: tema.subtext }}>
+                        <span 
+                          className="px-2 py-0.5 rounded text-[11px] font-semibold"
+                          style={{
+                            backgroundColor: isDarkMode ? 'rgba(143, 209, 168, 0.15)' : '#E8F5E9',
+                            color: isDarkMode ? '#8FD1A8' : '#006B3E',
+                            border: isDarkMode ? '1px solid rgba(143, 209, 168, 0.3)' : '1px solid #C8E6C9'
+                          }}
+                        >
+                          {vaga.custosDetalhados.gas > 0 ? 'Rateio médio' : 'Incluso'}
+                        </span>
+                      </td>
+                      <td className="py-2.5 text-xs hidden md:table-cell" style={{ color: tema.subtext }}>Reposição periódica de botijão/gás canalizado</td>
+                      <td className="py-2.5 font-bold text-right" style={{ color: vaga.custosDetalhados.gas > 0 ? tema.text : tema.subtext }}>
+                        {vaga.custosDetalhados.gas > 0 ? formatCurrency(vaga.custosDetalhados.gas) : 'Incluso'}
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr className="border-t" style={{ borderColor: tema.border }}>
+                      <td colSpan={2} className="pt-3 pb-1 text-xs" style={{ color: tema.subtext }}>
+                        Aluguel Base: <strong>{formatCurrency(vaga.valorAluguel)}</strong> | Taxas adicionais: <strong>{formatCurrency(vaga.valorContasInvisiveis)}</strong>
+                      </td>
+                      <td colSpan={2} className="pt-3 pb-1 text-xs text-right hidden sm:table-cell" style={{ color: tema.subtext }}>
+                        Total mensal estimado:
+                      </td>
+                    </tr>
+                    <tr className="border-t-2" style={{ borderColor: isDarkMode ? '#8FD1A8' : '#006B3E' }}>
+                      <td colSpan={2} className="pt-3 pb-1">
+                        <span className="text-base sm:text-lg font-black" style={{ color: tema.text }}>
+                          TOTAL MENSAL ESTIMADO
+                        </span>
+                        <span className="block text-[11px]" style={{ color: tema.subtext }}>
+                          (Aluguel + IPTU + Luz + Água + Wi-Fi)
+                        </span>
+                      </td>
+                      <td colSpan={2} className="pt-3 pb-1 text-right">
+                        <span className="text-2xl sm:text-3xl font-black text-emerald-700 dark:text-emerald-400">
+                          {formatCurrency(vaga.valorTotal)}
+                        </span>
+                        <span className="text-xs font-semibold ml-1" style={{ color: tema.subtext }}>/mês</span>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
               </div>
 
               {vaga.observacaoCustos && (

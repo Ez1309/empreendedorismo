@@ -3,6 +3,7 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import SearchSidebar from './components/filtros/SearchSidebar';
 import VagaCard from './components/vagas/VagaCard';
+import VagaModal from './components/vagas/VagaModal';
 import VagaDetalhes from './pages/VagaDetalhes';
 import { useVagas } from './hooks/useVagas';
 import { useTheme } from './context/ThemeContext';
@@ -18,6 +19,7 @@ export default function App() {
   const { vagas, totalVagas, filtros, setFiltros } = useVagas();
   const { tema, isDarkMode, layoutMode, setLayoutMode } = useTheme();
   const [vagaIdUrl, setVagaIdUrl] = useState(null);
+  const [modalVaga, setModalVaga] = useState(null);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -216,7 +218,11 @@ export default function App() {
             {vagas.length > 0 ? (
               <div className={layoutMode === 'lista' ? 'space-y-4' : 'grid grid-cols-1 md:grid-cols-2 gap-6'}>
                 {vagas.map((vaga) => (
-                  <VagaCard key={vaga.id} vaga={vaga} />
+                  <VagaCard 
+                    key={vaga.id} 
+                    vaga={vaga} 
+                    onAbrirModal={(v) => setModalVaga(v)}
+                  />
                 ))}
               </div>
             ) : (
@@ -237,6 +243,14 @@ export default function App() {
         </div>
 
       </main>
+
+      {/* Modal de Detalhes com Tabela de Custos Abertos */}
+      {modalVaga && (
+        <VagaModal 
+          vaga={modalVaga} 
+          onClose={() => setModalVaga(null)} 
+        />
+      )}
 
       {/* Footer na mesma cor do banner Hero */}
       <Footer />

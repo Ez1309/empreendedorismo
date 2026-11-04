@@ -86,6 +86,11 @@ export function ThemeProvider({ children }) {
 
   useEffect(() => {
     localStorage.setItem('acomoda_dark_mode', isDarkMode);
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
     document.body.style.backgroundColor = tema.bg;
     document.body.style.color = tema.text;
   }, [isDarkMode, tema]);
