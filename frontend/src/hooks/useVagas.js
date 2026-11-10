@@ -8,16 +8,19 @@ import vagasMock from '../data/vagas_mock.json';
  * Fase 2 (Membro 2): Motor de Busca e Lógica de Filtragem Cruzada (regras de convivência, distância e tipo de imóvel).
  */
 export function useVagas() {
-  const [filtros, setFiltros] = useState({
-    precoMaximo: '',
-    distanciaMaximaKm: '',
-    aceitaPet: false,
-    permiteFumar: false,
-    ambienteSilencioso: false,
-    tipoMoradia: 'todos',
-    generoMoradia: 'todos',
-    termoBusca: '',
-    ordenarPor: 'padrao'
+  const [filtros, setFiltros] = useState(() => {
+    const params = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+    return {
+      precoMaximo: params?.get('precoMaximo') || '',
+      distanciaMaximaKm: params?.get('distanciaMaximaKm') || '',
+      aceitaPet: params?.get('aceitaPet') === 'true',
+      permiteFumar: params?.get('permiteFumar') === 'true',
+      ambienteSilencioso: params?.get('ambienteSilencioso') === 'true',
+      tipoMoradia: params?.get('tipoMoradia') || 'todos',
+      generoMoradia: params?.get('generoMoradia') || 'todos',
+      termoBusca: params?.get('termoBusca') || '',
+      ordenarPor: params?.get('ordenarPor') || 'padrao'
+    };
   });
 
   const vagasFiltradas = useMemo(() => {
