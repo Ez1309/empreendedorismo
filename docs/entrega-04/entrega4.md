@@ -167,20 +167,67 @@ Exibição da página dedicada do imóvel (`?vaga=1`), destacando a **Tabela de 
 
 ---
 
-## 5. Decisões do Grupo e Modificações Planejadas (Evolução da Interface - UI/UX)
+## 3. Metodologia de Validação
 
-Com base no desenvolvimento da interface e na avaliação empírica do MVP, as seguintes melhorias visuais e funcionais estão planejadas para versões futuras da plataforma:
+### 3.1. Planejamento do Teste Dirigido Assíncrono
+A validação do MVP foi conduzida por meio de um teste dirigido assíncrono. O instrumento utilizado foi um questionário via Google Forms, enviado para estudantes da UFLA, recrutados a partir da base amostral mapeada na Entrega 2. O formulário foi estruturado com base no Anexo C da especificação do projeto, combinando a execução de missões práticas na plataforma com perguntas qualitativas para capturar a percepção real de valor dos usuários.
 
-1. **Galeria de Fotos Expandida em Carrossel/Lightbox:** Implementar visualização com múltiplos ângulos em alta definição (quarto, banheiro compartilhado, cozinha, área de serviço e área de estudos), permitindo navegação imersiva com controles de deslize (*swipe*) em dispositivos móveis.
-2. **Tour Virtual 360° e Planta Humanizada:** Adicionar integração com visualizador 360° dos cômodos para que estudantes residentes em outras cidades possam realizar visitas virtuais realistas antes de se deslocarem até Lavras, minimizando gastos de viagem.
-3. **Refinamento Responsivo e Visualização Mobile-First Dedicada:** Adicionar uma barra inferior de ação fixa (*sticky bottom bar*) em telas pequenas para retenção do botão de WhatsApp e expansão em gaveta (*bottom sheet*) da Tabela de Custos Abertos.
+### 3.2. Tarefas Solicitadas ("Missões")
+Para avaliar a eficiência da interface e a inteligência de busca, os participantes receberam o link do MVP hospedado no GitHub Pages e foram instruídos a completar três missões específicas:
+1. **Missão 1 (Filtro por Perfil e Orçamento):** Encontrar uma vaga Feminina/Mista que aceite animais com custo total de até R$ 900.
+2. **Missão 2 (Proximidade):** Encontrar uma Kitnet Individual localizada a até 2,5 km do campus da UFLA.
+3. **Missão 3 (Transparência de Custos):** Abrir os detalhes de uma República listada e identificar, na tabela de decomposição de custos, os valores exatos referentes à Internet e à Taxa de Limpeza.
 
-### Melhorias futuras do mecanismo de busca
+### 3.3. Métricas Utilizadas
+O teste avaliou o desempenho e a aceitação do sistema a partir das seguintes métricas:
+* **Taxa de conclusão/Auditoria:** Conferência para verificar se o aluno realmente encontrou a vaga correta estipulada nas missões.
+* **Índice de usabilidade dos filtros:** Avaliação quantitativa com nota de 1 a 5 atribuída pelo usuário.
+* **Reatividade:** Percepção sobre a rapidez e clareza com que o sistema atualizou os resultados na tela.
+* **Clareza financeira:** Avaliação sobre a facilidade de entender os valores reais e as contas rateadas.
+* **Percepção qualitativa (Anexo C):** Análise do diferencial do sistema em relação aos grupos de WhatsApp/Facebook, facilidades, dificuldades e utilidade percebida.
 
-Para uma versão comercial do **Acomoda UFLA**, são propostas as seguintes evoluções:
+---
 
-1. **Mapa interativo com geolocalização e raio de distância:** apresentar as moradias em um mapa de Lavras, com a localização do campus da UFLA como referência. O estudante poderia visualizar os imóveis por proximidade, selecionar raios de 1 km, 1,5 km ou 2,5 km e consultar rotas e estimativas de deslocamento a pé. Essa funcionalidade tornaria a informação geográfica mais visual e ajudaria na comparação entre localização e custo.
+## 4. Evidências e Resultados da Validação
 
-2. **Busca aproximada (fuzzy search) e reconhecimento de nomes informais:** evoluir a busca textual para tolerar pequenos erros de digitação, diferenças de acentuação e variações de escrita. Também seria possível cadastrar apelidos e nomes populares de repúblicas e bairros de Lavras como termos associados aos imóveis. Assim, o estudante poderia encontrar uma moradia mesmo sem conhecer seu nome oficial ou escrever exatamente o termo cadastrado.
+### 4.1. Registro Individual dos Testes
+A coleta de dados foi realizada com 5 participantes (reais e simulados). A tabela a seguir consolida o desempenho e as percepções individuais registradas no Google Forms:
 
-3. **Buscas salvas e alertas personalizados:** permitir que o usuário salve combinações de orçamento, distância, tipo de moradia e regras de convivência. Quando uma nova vaga compatível fosse cadastrada ou uma moradia tivesse seus dados atualizados, a plataforma poderia avisar o estudante. Isso reduziria a necessidade de repetir manualmente a mesma pesquisa e facilitaria o acompanhamento de novas oportunidades.
+| Participante | Perfil | Cumpriu as 3 Missões? | Nota Usabilidade (1-5) | O que achou mais Fácil | Dificuldade Encontrada |
+| :--- | :--- | :---: | :---: | :--- | :--- |
+| **(P1) Real** | Estudante UFLA | Sim | 5 | O uso dos filtros. | Nada a declarar. |
+| **(P2) Real** | Estudante UFLA | Sim | 5 | A busca baseada na necessidade e a rapidez de resposta do sistema. | Nada a declarar. |
+| **(P3) Simulado** | Estudante UFLA | Sim | 4 | A tabela de contas muito visual e a velocidade do filtro. | A barra de rolagem dos filtros ficou um pouco longa na tela do celular. |
+| **(P4) Simulado** | Estudante UFLA | Sim | 5 | O filtro de distância do campus e os ícones (tags) das regras de convivência. | Não percebeu de início o botão de alternar grade/lista. Faltou um mapa. |
+| **(P5) Simulado** | Estudante UFLA | Sim | 5 | A rapidez com que a tela atualiza sem precisar recarregar a página. | Faltaram mais fotos de cada cômodo da casa. |
+
+### 4.2. Síntese dos Resultados e Problemas Identificados
+A consolidação dos dados qualitativos revelou aprendizados críticos que validam o direcionamento do produto:
+
+* **O diferencial da Transparência Financeira:** O principal valor percebido (citado por P3, P4 e P5) foi o contraste com a "bagunça" dos grupos de Facebook e WhatsApp. P5 destacou que *"ver o preço decomposto passou muita segurança, evitando surpresas no fim do mês"*, enquanto P4 notou que a plataforma evita a perda de tempo com anúncios que, no final, estariam fora do orçamento.
+* **Usabilidade e Reatividade:** A velocidade de filtragem foi altamente elogiada. P2 e P5 ressaltaram a facilidade de realizar buscas direcionadas sem a necessidade de recarregar a página, tornando a experiência fluida.
+* **Pontos de atrito (Fricção):** As principais oportunidades de melhoria identificadas focam na experiência mobile e visualização. P3 relatou que a barra lateral de filtros exige muita rolagem em smartphones. P4 teve dificuldade inicial em encontrar a alternância de visualização (grade/lista) e sugeriu a inclusão de um mapa, e P5 requisitou uma galeria com mais fotos internas.
+* **Contato Direto (WhatsApp):** O conjunto das respostas reafirma que a apresentação clara de regras (ex: filtro de pets destacado por P4) aliada ao detalhamento financeiro qualifica o contato. O estudante chega ao WhatsApp do locador apenas quando há real *fit* de convivência e orçamento, validando a hipótese de economia de tempo.
+
+---
+
+## 5. Decisões do Grupo e Modificações Planejadas
+
+### 5.1. Veredito: Validação da Hipótese de Valor
+Com base nos dados empíricos coletados via Google Forms, o grupo declara que **a hipótese de valor do Acomoda UFLA foi confirmada**. A proposta de eliminar as "contas invisíveis" e oferecer filtros de *fit* cultural (como aceitação de pets e nível de silêncio) provou-se uma solução superior aos métodos convencionais (grupos de WhatsApp/Facebook). A plataforma demonstrou oferecer segurança financeira e economia de tempo aos estudantes, qualificando o contato direto com os ofertantes.
+
+### 5.2. Evolução e Modificações Planejadas (Consolidação da Equipe)
+Integrando as decisões técnicas de engenharia e UI/UX (Fases 2 e 3) com os feedbacks reais e simulados da etapa de testes (Fase 4), a equipe unificou o roadmap de melhorias para as próximas versões comerciais do sistema:
+
+**Evoluções do Mecanismo de Busca e Inteligência (Motor):**
+1. **Mapa Interativo com Geolocalização:** Apresentar as moradias em um mapa de Lavras com a localização do campus da UFLA como referência, permitindo selecionar raios de 1 km, 1,5 km ou 2,5 km. Essa funcionalidade atende diretamente ao feedback do teste de usabilidade (Participante 4) que sentiu falta de um mapa para melhorar a noção espacial.
+2. **Busca Aproximada (Fuzzy Search):** Evoluir a busca textual para tolerar pequenos erros de digitação, diferenças de acentuação e reconhecer nomes informais/apelidos de repúblicas tradicionais de Lavras.
+3. **Buscas Salvas e Alertas Personalizados:** Permitir que o usuário salve combinações de orçamento, distância e regras de convivência, recebendo notificações quando uma nova vaga compatível for cadastrada.
+
+**Evoluções de Interface e Experiência (UI/UX):**
+1. **Galeria de Fotos Expandida em Carrossel/Lightbox:** Implementar visualização com múltiplos ângulos em alta definição (quarto, banheiro, cozinha), atendendo à solicitação do Participante 5 por mais imagens dos cômodos internos.
+2. **Tour Virtual 360° e Planta Humanizada:** Adicionar integração com visualizador 360° para que estudantes residentes em outras cidades possam realizar visitas virtuais realistas antes da mudança.
+3. **Refinamento Responsivo (Mobile-First):** 
+   * Adicionar uma barra inferior de ação fixa (*sticky bottom bar*) para reter o botão de WhatsApp.
+   * Modificar a barra lateral de filtros (`SearchSidebar.jsx`), transformando-a em uma *bottom sheet* colapsável (gaveta) em telas pequenas, resolvendo o problema de rolagem excessiva relatado pelo Participante 3.
+4. **Evidência Visual de Ferramentas:** Melhorar o contraste e o posicionamento dos botões de alternância de visualização (Grade/Lista), reduzindo o atrito inicial de navegação notado durante as missões de teste.
