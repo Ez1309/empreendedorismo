@@ -102,6 +102,44 @@ Eliminando formulários morosos de cadastro ou intermediações com imobiliária
   > *"Olá! Vi a vaga '[Título do Quarto/República]' no Acomoda UFLA e gostaria de tirar algumas dúvidas sobre a disponibilidade."*
 - Esse mecanismo reduz o atrito de comunicação, evita que o estudante precise salvar o contato manualmente antes de iniciar a conversa e garante que o anunciante saiba com precisão qual vaga motivou o contato.
 
+#### Mecanismo de Busca e Filtragem Cruzada
+
+O mecanismo de busca do **Acomoda UFLA** foi desenvolvido na Fase 2 e está concentrado no hook `frontend/src/hooks/useVagas.js`, integrado ao componente `frontend/src/components/filtros/SearchSidebar.jsx`. Sua finalidade é permitir que o estudante combine critérios financeiros, de localização e de convivência para encontrar moradias compatíveis com suas necessidades.
+
+#### Funcionamento da filtragem reativa
+
+O hook `useVagas` utiliza o estado do React (`useState`) para manter os valores selecionados nos filtros. Esse estado é compartilhado com a barra lateral por meio das propriedades `filtros` e `setFiltros`. No componente `SearchSidebar`, os campos são controlados pelo estado: quando o usuário altera um campo ou marca uma opção, a função `handleChange` atualiza somente o atributo correspondente, preservando os demais filtros selecionados.
+
+A lista de resultados é derivada com `useMemo`. Sempre que o objeto de filtros é atualizado, o hook percorre os registros de `vagas_mock.json` e aplica os critérios selecionados. Como os critérios são avaliados em conjunto, uma moradia precisa atender a **todos os filtros ativos** para permanecer nos resultados. A filtragem é realizada localmente sobre o mock, sem requisições a um servidor; no conjunto atual, composto por dez registros, isso permite atualizar o catálogo diretamente após a interação do usuário. O `useMemo` evita repetir esse processamento em renderizações nas quais o objeto de filtros não mudou.
+
+Depois da filtragem, o hook cria uma cópia da lista (`[...filtradas]`) para executar a ordenação sem modificar a ordem da base original. A interface recebe a lista resultante e atualiza a quantidade de moradias exibidas. O botão **Limpar** restaura os campos para seus valores iniciais, removendo as restrições aplicadas.
+
+#### Critérios de busca implementados
+
+- **Orçamento total máximo:** o campo numérico recebe o limite definido pelo estudante. O hook compara esse valor com `vaga.valorTotal` e remove os imóveis cujo total ultrapassa o orçamento. No arquivo `vagas_mock.json`, `valorTotal` representa o aluguel (`valorAluguel`) somado às despesas de `custosDetalhados` (como condomínio, IPTU, energia, água, internet, limpeza e gás, quando existentes). Os dez registros atuais apresentam consistência entre essa soma e o total armazenado. É importante observar que, na implementação atual, o hook consulta o campo consolidado `valorTotal`; ele não refaz a soma de cada despesa durante a filtragem.
+
+- **Distância até a UFLA:** o filtro compara `distanciaUflaKm` com o limite selecionado. A barra lateral oferece as opções de até **1,0 km**, **1,5 km** e **2,5 km**. A opção **Qualquer distância** deixa o campo vazio e não impõe restrição geográfica.
+
+- **Regras de convivência:** há três opções independentes: **Aceita animais**, **Permite fumantes** e **Silencioso / foco em estudo**. Quando uma opção é marcada, são mantidas somente as moradias cuja propriedade correspondente em `vaga.regras` seja verdadeira (`aceitaPet`, `permiteFumar` ou `ambienteSilenciosoEstudo`). Quando a opção não está marcada, aquela regra não restringe os resultados.
+
+- **Tipo de moradia:** o seletor permite escolher entre **República**, **Apartamento dividido**, **Kitnet individual** e **Pensionato**, ou manter todos os tipos. A comparação é feita pelo campo `tipoMoradia` do registro. Embora o conjunto de dados também tenha informações sobre o tipo de quarto, não existe atualmente uma opção independente de filtro chamada **Quarto individual**.
+
+- **Perfil de gênero da moradia:** o estudante pode selecionar **Feminina**, **Masculina** ou **Mista**. O hook compara a escolha com o campo `generoMoradia`; a opção **Todos** não aplica restrição por esse critério.
+
+- **Busca textual livre:** o campo de busca da página inicial procura o texto informado no título, no bairro e na descrição da moradia (`titulo`, `bairro` e `descricao`). A comparação transforma os textos em letras minúsculas e utiliza `includes`, permitindo localizar trechos de palavras sem diferenciar letras maiúsculas e minúsculas. A busca atual é literal: ainda não corrige erros de digitação, não considera sinônimos e não remove acentos automaticamente.
+
+#### Ordenação dinâmica dos resultados
+
+A barra lateral oferece diferentes formas de organizar as moradias que passaram pelos filtros:
+
+- **Menor preço:** ordena de forma crescente pelo `valorTotal`, colocando primeiro as opções de menor custo mensal consolidado.
+- **Maior preço:** ordena de forma decrescente pelo `valorTotal`.
+- **Mais perto da UFLA:** ordena de forma crescente por `distanciaUflaKm`, exibindo primeiro os imóveis mais próximos do campus.
+- **Bairro (A-Z):** organiza os resultados alfabeticamente pelo nome do bairro, utilizando `localeCompare` com a localidade `pt-BR`.
+- **Relevância (padrão):** mantém a ordem original dos registros no arquivo JSON. Apesar do rótulo exibido na interface, ainda não há um algoritmo que calcule uma pontuação de relevância.
+
+Os parâmetros dos filtros também podem ser recuperados da query string da URL no carregamento inicial da aplicação, incluindo orçamento, distância, regras de convivência, tipo, perfil de moradia, termo de busca e ordenação. Isso permite abrir a página com critérios previamente definidos.
+
 ---
 
 ### 2.4. Capturas de Tela (Screenshots Oficiais do MVP)
@@ -136,3 +174,13 @@ Com base no desenvolvimento da interface e na avaliação empírica do MVP, as s
 1. **Galeria de Fotos Expandida em Carrossel/Lightbox:** Implementar visualização com múltiplos ângulos em alta definição (quarto, banheiro compartilhado, cozinha, área de serviço e área de estudos), permitindo navegação imersiva com controles de deslize (*swipe*) em dispositivos móveis.
 2. **Tour Virtual 360° e Planta Humanizada:** Adicionar integração com visualizador 360° dos cômodos para que estudantes residentes em outras cidades possam realizar visitas virtuais realistas antes de se deslocarem até Lavras, minimizando gastos de viagem.
 3. **Refinamento Responsivo e Visualização Mobile-First Dedicada:** Adicionar uma barra inferior de ação fixa (*sticky bottom bar*) em telas pequenas para retenção do botão de WhatsApp e expansão em gaveta (*bottom sheet*) da Tabela de Custos Abertos.
+
+### Melhorias futuras do mecanismo de busca
+
+Para uma versão comercial do **Acomoda UFLA**, são propostas as seguintes evoluções:
+
+1. **Mapa interativo com geolocalização e raio de distância:** apresentar as moradias em um mapa de Lavras, com a localização do campus da UFLA como referência. O estudante poderia visualizar os imóveis por proximidade, selecionar raios de 1 km, 1,5 km ou 2,5 km e consultar rotas e estimativas de deslocamento a pé. Essa funcionalidade tornaria a informação geográfica mais visual e ajudaria na comparação entre localização e custo.
+
+2. **Busca aproximada (fuzzy search) e reconhecimento de nomes informais:** evoluir a busca textual para tolerar pequenos erros de digitação, diferenças de acentuação e variações de escrita. Também seria possível cadastrar apelidos e nomes populares de repúblicas e bairros de Lavras como termos associados aos imóveis. Assim, o estudante poderia encontrar uma moradia mesmo sem conhecer seu nome oficial ou escrever exatamente o termo cadastrado.
+
+3. **Buscas salvas e alertas personalizados:** permitir que o usuário salve combinações de orçamento, distância, tipo de moradia e regras de convivência. Quando uma nova vaga compatível fosse cadastrada ou uma moradia tivesse seus dados atualizados, a plataforma poderia avisar o estudante. Isso reduziria a necessidade de repetir manualmente a mesma pesquisa e facilitaria o acompanhamento de novas oportunidades.
