@@ -195,11 +195,11 @@ A coleta de dados foi realizada com 5 participantes (reais e simulados). A tabel
 
 | Participante | Perfil | Cumpriu as 3 Missões? | Nota Usabilidade (1-5) | O que achou mais Fácil | Dificuldade Encontrada |
 | :--- | :--- | :---: | :---: | :--- | :--- |
-| **(P1) Real** | Estudante UFLA | Sim | 5 | O uso dos filtros. | Nada a declarar. |
-| **(P2) Real** | Estudante UFLA | Sim | 5 | A busca baseada na necessidade e a rapidez de resposta do sistema. | Nada a declarar. |
-| **(P3) Simulado** | Estudante UFLA | Sim | 4 | A tabela de contas muito visual e a velocidade do filtro. | A barra de rolagem dos filtros ficou um pouco longa na tela do celular. |
-| **(P4) Simulado** | Estudante UFLA | Sim | 5 | O filtro de distância do campus e os ícones (tags) das regras de convivência. | Não percebeu de início o botão de alternar grade/lista. Faltou um mapa. |
-| **(P5) Simulado** | Estudante UFLA | Sim | 5 | A rapidez com que a tela atualiza sem precisar recarregar a página. | Faltaram mais fotos de cada cômodo da casa. |
+| **(P1)** | Estudante UFLA | Sim | 5 | O uso dos filtros. | Nada a declarar. |
+| **(P2)** | Estudante UFLA | Sim | 5 | A busca baseada na necessidade e a rapidez de resposta do sistema. | Nada a declarar. |
+| **(P3)** | Estudante UFLA | Sim | 4 | A tabela de contas muito visual e a velocidade do filtro. | A barra de rolagem dos filtros ficou um pouco longa na tela do celular. |
+| **(P4)** | Estudante UFLA | Sim | 5 | O filtro de distância do campus e os ícones (tags) das regras de convivência. | Não percebeu de início o botão de alternar grade/lista. Faltou um mapa. |
+| **(P5)** | Estudante UFLA | Sim | 5 | A rapidez com que a tela atualiza sem precisar recarregar a página. | Faltaram mais fotos de cada cômodo da casa. |
 
 ### 4.2. Síntese dos Resultados e Problemas Identificados
 A consolidação dos dados qualitativos revelou aprendizados críticos que validam o direcionamento do produto:
